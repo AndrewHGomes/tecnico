@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/global.css" />
+    <link rel="stylesheet" href="../../assets/fontawesome/css/all.min.css" />
+    <script src="../../js/index.js" defer></script>
+    <title>Introdução e Tipos de Desenvolvimento Mobile</title>
+  </head>
+  <body>
+    <aside>
+      <a href="#" class="fechar-menu">FECHAR MENU</a>
+      <a href="./tiposmobile.html">
+        Introdução e Tipos de Desenvolvimento Mobile
+      </a>
+      <a href="./linguagensabordagens.html"
+        >Várias Linguagens e Abordagens Existem</a
+      >
+      <a href=""></a>
+      <a href=""></a>
+      <a href=""></a>
+      <a href=""></a>
+    </aside>
+    <main>
+      <header>
+        <i class="fa-solid fa-bars"></i>
+        <h3>Fundamentos e Introdução a Frameworks</h3>
+      </header>
+      <section class="audios">
+        <audio src="../../audios/audiosM9/aula05.mp3" controls></audio>
+        <audio src="../../audios/audiosM9/aula06.mp3" controls></audio>
+        <audio src="../../audios/audiosM9/aula07.mp3" controls></audio>
+        <audio src="../../audios/audiosM9/aula08.mp3" controls></audio>
+      </section>
+      <section>
+        <p>
+          A base do curso foi estabelecida com a revisão das
+          <strong>motivações</strong> e <strong>fundamentações</strong> do
+          desenvolvimento mobile, o entendimento das diferenças entre as
+          abordagens <strong>nativa</strong> e <strong>híbrida</strong>, e a
+          confirmação das ferramentas essenciais:
+          <strong>HTML, CSS e JavaScript</strong>.
+        </p>
+        <p>
+          O próximo passo é aprofundar no desenvolvimento, com foco em
+          <strong>plataformas</strong> e <strong>frameworks</strong>. As
+          questões centrais a serem exploradas são:
+          <strong>O que é um framework?</strong>,
+          <strong>O que é híbrido?</strong> e, por fim, qual a melhor abordagem
+          em um cenário com diversas opções.
+        </p>
+        <p>
+          É fundamental que se entenda a filosofia de que
+          <strong> nunca existiu um framework único </strong> ou universalmente
+          superior. O mundo do desenvolvimento é marcado pela
+          <strong>mistura de tecnologias</strong> e múltiplas abordagens, e o
+          aluno deve estar preparado para essa diversidade.
+        </p>
+        <p>
+          Seguindo esta base, o curso focará em um
+          <strong>framework baseado em Node.js</strong>. Assim, as próximas
+          etapas serão dedicadas a compreender, instalar e utilizar o
+          <strong>Svelte</strong>.
+        </p>
+        <h4>Configuração e Inicialização do Projeto Svelte</h4>
+        <p>
+          Esta etapa detalha a instalação do ambiente de desenvolvimento
+          (Node.js) e a criação de um novo projeto usando ferramentas de linha
+          de comando (CLI), focado no <strong>Svelte</strong>.
+        </p>
+        <ol>
+          <li>
+            <strong>Instalação do Node.js</strong>
+            <ul>
+              <li>
+                O desenvolvimento híbrido baseado em JavaScript exige a
+                instalação do <strong>Node.js</strong>.
+                <ul>
+                  <li>
+                    O Node.js permite a criação de uma estrutura embarcada
+                    (aplicativos mobile) baseada na
+                    <strong>engine V8</strong> do navegador Chrome.
+                  </li>
+                  <li>
+                    A instalação é simples: basta baixar e executar o instalador
+                    do Node.js.
+                  </li>
+                  <li>
+                    Ao instalar o Node.js, o <strong>NPM</strong> (Node Package
+                    Manager), o gerenciador de pacotes, é instalado
+                    automaticamente.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>Instalação do Svelte CLI (Adaptação)</strong>
+            <ul>
+              <li>
+                Embora o material mencione a instalação do Ionic CLI, para
+                utilizar o Svelte, tipicamente utilizamos ferramentas como npm
+                ou yarn para inicializar o projeto diretamente, ou um pacote CLI
+                relacionado ao ecossistema Svelte (como o vite para criar
+                projetos Svelte).
+              </li>
+              <li>
+                <strong>Assumindo a adaptação:</strong> A instalação do CLI
+                (Command Line Interface) do framework seria feita via npm,
+                utilizando a opção -g para <strong>instalação global</strong>.
+              </li>
+              <li>
+                <strong>Nota de Permissão:</strong> Pacotes globais podem causar
+                erros de permissão <strong>(EACCES)</strong>. É recomendado
+                configurar o npm para operar globalmente sem a necessidade de
+                permissões elevadas.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>Criando e Executando um Aplicativo Inicial</strong>
+            <ul>
+              <li>
+                Com o ambiente configurado, o próximo passo é gerar o aplicativo
+                <strong>Svelte</strong> inicial.
+                <ol>
+                  <li>
+                    <strong>Criação do Aplicativo:</strong> O comando npm create
+                    vite@latest (ou um comando similar para inicialização de
+                    Svelte) inicia um processo interativo que solicita detalhes
+                    de configuração do APP.
+                  </li>
+                  <li>
+                    <strong>Inicialização:</strong> Após a instalação dos
+                    pacotes, entre no diretório do novo projeto.
+                    <ul>
+                      <li>cd [nome-do-app]</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Execução do Servidor:</strong> Use o comando de
+                    serve do framework (ex.: npm run dev) para iniciar o
+                    aplicativo.
+                    <ul>
+                      <li>
+                        Como se trata de uma versão híbrida, o aplicativo será
+                        <strong>executado no navegador</strong> em um endereço
+                        local (http://localhost:[porta]).
+                      </li>
+                    </ul>
+                  </li>
+                </ol>
+              </li>
+            </ul>
+          </li>
+        </ol>
+        <p>
+          Ao executar, o APP inicial é simples (normalmente com navegação básica
+          entre telas), mas demonstra o grande avanço da
+          <strong>automação</strong> no processo de desenvolvimento híbrido.
+        </p>
+        <h4>Entendendo a Interatividade e Primeiras Alterações</h4>
+        <p>
+          Esta seção aborda a verificação e a alteração do código-fonte do
+          aplicativo <strong>em tempo real</strong>, garantindo a compreensão do
+          ciclo de desenvolvimento.
+        </p>
+        <h4>Interatividade em Tempo Real</h4>
+        <ol>
+          <li>
+            <strong>Abertura do Projeto:</strong> Para começar a editar o
+            código-fonte, o ambiente de desenvolvimento (VS Code, mencionado
+            anteriormente) deve ser aberto na pasta do projeto usando o comando
+            de terminal: code .
+          </li>
+          <li>
+            <strong>Edição Rápida (Hot Reload):</strong> O principal recurso a
+            ser notado é que qualquer alteração feita no código-fonte é
+            refletida imediatamente na saída de dados no navegador (função
+            conhecida como Hot Reload ou Live Reload).
+          </li>
+          <li>
+            <strong>Detecção de Erros:</strong> Caso uma alteração introduza um
+            erro no código, a tela de visualização no navegador reagirá,
+            geralmente ficando em branco ou cinza, sinalizando o problema.
+          </li>
+        </ol>
+        <h4>Trilha Prática: Alterando o Exemplo Base</h4>
+        <p>
+          A prática consiste em customizar o aplicativo inicial, alterando os
+          nomes das abas (ou tabs) de navegação.
+        </p>
+        <p>
+          <strong>Objetivo:</strong> Modificar os nomes padrão para algo mais
+          significativo: <strong>Aluno, Secretaria e Calendário</strong>.
+        </p>
+        <ol>
+          <li>
+            <strong>Alteração de Conteúdo:</strong> O texto sugere modificar a
+            propriedade name de um componente de exibição em arquivos de página
+            (como tab1-page.html, tab2-page.html, etc. — que, no contexto
+            Svelte, seriam provavelmente componentes .svelte).
+            <ul>
+              <li>
+                Exemplo de alteração conceitual:
+                <ul>
+                  <li>Página 1: name = "Aluno"</li>
+                  <li>Página 2: name = "Secretaria"</li>
+                  <li>Página 3: name = "Calendário"</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>Alteração da Barra de Navegação:</strong> É necessário
+            também alterar os rótulos (labels) que aparecem na barra de
+            navegação inferior (que, no <strong>Svelte</strong>, seriam
+            componentes de interface). A ideia é mapear os rótulos
+            <strong> Aluno, Secretaria e Calendário </strong> aos seus
+            respectivos ícones e tabs.
+          </li>
+        </ol>
+        <p>
+          Após as alterações, o aluno testa o aplicativo no navegador para ver o
+          resultado da customização.
+        </p>
+        <h4>Conclusão da Etapa</h4>
+        <p>
+          O objetivo principal deste conteúdo é
+          <strong> praticar as primeiras configurações e alterações </strong> em
+          um projeto mobile híbrido, exercitando a familiaridade com o ambiente
+          de desenvolvimento e o ciclo de feedback rápido.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
