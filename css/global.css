@@ -39,12 +39,12 @@ aside {
 
 aside .fechar-menu {
   display: none;
-  color: #800;
+  color: #f00;
   transition: all 0.3s ease;
 }
 
 aside .fechar-menu:hover {
-  color: #800;
+  color: #f00;
 }
 
 aside a {
@@ -124,9 +124,12 @@ main section ul {
 }
 
 @media (max-width: 750px) {
+  aside {
+    right: 0;
+  }
+
   main header h2,
   main header h3 {
-    /* visibility: hidden; */
     display: none;
   }
 }
